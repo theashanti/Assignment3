@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h1>String duplication</h1>
+    <div id="app">
+        <p>
+            Message
+            <input type="text" v-model.lazy="message" placeholder="Something to repeat">
+            How many
+            <input type="number" v-model.lazy="times" placeholder="time to repeat">
+            <button v-on:click="repeat()">Do it!</button>
+        </p>
+        <span>{{outputMessage}}</span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
